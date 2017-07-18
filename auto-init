@@ -4,7 +4,3 @@ set -e
 if [ ! -d node_modules ]; then
   ./init
 fi
-
-cd lib/td-tmp-common
-./auto-init
-cd ../../
