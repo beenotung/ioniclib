@@ -1,9 +1,8 @@
 {
   "name": "ioniclib",
   "version": "0.0.2",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
-  "private": true,
+  "author": "Beeno Tung",
+  "homepage": "https://github.com/beenotung",
   "scripts": {
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
@@ -37,7 +36,7 @@
     "typescript": "2.3.4",
     "typestub-horizon-client": "^0.1.3"
   },
-  "description": "An Ionic project",
+  "description": "An Ionic library",
   "peerDependencies": {
     "typestub-horizon-client": "^0.1.3"
   }
