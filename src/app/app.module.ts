@@ -34,7 +34,6 @@ import {HorizonService} from '../providers/horizon-service/horizon-service';
     HLineComponent,
     LoadingComponent,
     LoadingDivComponent,
-    HorizonService,
   ],
 })
 export class AppModule {
