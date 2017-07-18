@@ -9,6 +9,7 @@ import {CustomBrowserXhr} from '../providers/custom-browser-xhr/custom-browser-x
 import {HLineComponent} from '../components/h-line/h-line';
 import {LoadingComponent} from '../components/loading/loading';
 import {LoadingDivComponent} from '../components/loading-div/loading-div';
+import {HorizonService} from '../providers/horizon-service/horizon-service';
 
 @NgModule({
   declarations: [
@@ -27,11 +28,13 @@ import {LoadingDivComponent} from '../components/loading-div/loading-div';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ProgressService,
     CustomBrowserXhr,
+    HorizonService,
   ],
   exports: [
     HLineComponent,
     LoadingComponent,
     LoadingDivComponent,
+    HorizonService,
   ],
 })
 export class AppModule {
