@@ -19,7 +19,7 @@ import {HorizonService} from '../providers/horizon-service/horizon-service';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(AppModule)
+    IonicModule.forRoot(IonicLibModule)
   ],
   entryComponents: [],
   providers: [
@@ -36,5 +36,5 @@ import {HorizonService} from '../providers/horizon-service/horizon-service';
     LoadingDivComponent,
   ],
 })
-export class AppModule {
+export class IonicLibModule {
 }
