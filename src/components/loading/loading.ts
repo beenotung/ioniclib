@@ -9,7 +9,7 @@ import {assets} from '../../app/app.res';
  * for more info on Angular Components.
  */
 @Component({
-  selector: 'loading',
+  selector: 'loading-cmp',
   templateUrl: 'loading.html'
 })
 export class LoadingComponent {
