@@ -1,5 +1,3 @@
-<!-- Generated template for the HLineComponent component -->
-
 <div
   *ngIf="mode===Mode.raw"
   [style.background]="_color"
@@ -7,13 +5,17 @@
   [style.padding]="padding"
   class="center-line"
 ></div>
-<ion-navbar
-  *ngIf="mode===Mode.theme"
-  [hideBackButton]="true"
-  [color]="_color"
-  [style.padding]="padding"
-  [style.height]="height"
-></ion-navbar>
+
+<!-- TODO fix ion-nav AOT compile issue -->
+<!--<ion-toolbar-->
+<!--*ngIf="mode===Mode.theme"-->
+<!--hideBackButton-->
+<!--showWhen="ios"-->
+<!--[ngClass]="_color_class"-->
+<!--[style.padding]="padding"-->
+<!--[style.height]="height"-->
+<!--&gt;</ion-toolbar>-->
+
 <div
   *ngIf="mode===Mode.nocolor"
   [style.height]="height"

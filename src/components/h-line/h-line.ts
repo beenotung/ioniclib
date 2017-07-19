@@ -1,4 +1,5 @@
 import {Component, Input} from '@angular/core';
+import {Platform} from 'ionic-angular';
 
 enum Mode {
   theme, raw, nocolor
@@ -33,7 +34,7 @@ export class HLineComponent {
 
   Mode = Mode;
 
-  constructor() {
+  constructor(public platform: Platform) {
     console.log('Hello HLineComponent Component');
   }
 
@@ -52,7 +53,21 @@ export class HLineComponent {
         : <string>this.rawColor;
     } else {
       /* mode === theme */
+      if (this.mode === Mode.theme) {
+        console.warn('not impl');
+      }
       return this.color;
+    }
+  }
+
+  get _color_class(): string {
+    if (this.mode === Mode.theme) {
+      return this.platform.is('ios')
+        ? 'toolbar-ios-primary'
+        : 'toolbar-md-primary'
+        ;
+    } else {
+      throw new Error('unsupported mode');
     }
   }
 }

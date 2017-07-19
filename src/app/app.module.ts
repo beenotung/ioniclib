@@ -6,18 +6,18 @@ import {StatusBar} from '@ionic-native/status-bar';
 
 import {ProgressService} from '../providers/progress-service/progress-service';
 import {CustomBrowserXhr} from '../providers/custom-browser-xhr/custom-browser-xhr';
-import {HLineComponent} from '../components/h-line/h-line';
-import {LoadingComponent} from '../components/loading/loading';
+// import {HLineComponent} from '../components/h-line/h-line';
+// import {LoadingComponent} from '../components/loading/loading';
 import {HorizonService} from '../providers/horizon-service/horizon-service';
 
 @NgModule({
   declarations: [
-    HLineComponent,
-    LoadingComponent,
+    // HLineComponent,
+    // LoadingComponent,
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(IonicLibModule)
+    IonicModule.forRoot(AppModule)
   ],
   entryComponents: [],
   providers: [
@@ -29,9 +29,9 @@ import {HorizonService} from '../providers/horizon-service/horizon-service';
     HorizonService,
   ],
   exports: [
-    HLineComponent,
-    LoadingComponent,
+    // HLineComponent,
+    // LoadingComponent,
   ],
 })
-export class IonicLibModule {
+export class AppModule {
 }
