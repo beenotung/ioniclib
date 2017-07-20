@@ -1,9 +1,11 @@
 import {Component, Input} from '@angular/core';
 import {Platform} from 'ionic-angular';
 
-enum Mode {
+export enum HLineMode {
   theme, raw, nocolor
 }
+
+const Mode = HLineMode;
 
 /**
  * Generated class for the HLineComponent component.
@@ -55,11 +57,13 @@ export class HLineComponent {
   @Input()
   nocolor: boolean = false;
 
+  Mode = HLineMode;
+
   constructor(public platform: Platform) {
     console.log('Hello HLineComponent Component');
   }
 
-  get mode(): Mode {
+  get mode(): HLineMode {
     return this.nocolor !== false
       ? Mode.nocolor
       : this.rawColor == true || typeof this.rawColor === 'string'
