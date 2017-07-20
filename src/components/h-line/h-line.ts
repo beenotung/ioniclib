@@ -24,14 +24,15 @@ const Mode = HLineMode;
       class="center-line"
     ></div>
 
-    <!-- TODO fix ion-nav AOT compile issue -->
+    <!-- TODO add android impl -->
     <ion-toolbar
       *ngIf="mode===Mode.theme"
       hideBackButton
-      showWhen="ios"
       [color]="_color"
       [style.padding]="padding"
       [style.height]="height"
+      [style.maxHeight]="height"
+      [style.minHeight]="height"
     ></ion-toolbar>
 
     <div
