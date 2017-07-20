@@ -9,7 +9,7 @@
     "lint": "ionic-app-scripts lint",
     "ionic:build": "ionic-app-scripts build",
     "ionic:serve": "ionic-app-scripts serve",
-    "prepublish": "tsc && ls src/**/*.ts | xargs -I {} echo 'cat {} >> {}.d' | sed 's/ts.d/d.ts/' | source /dev/stdin"
+    "prepublish": "tsc && find src -name '*.ts' | xargs -I {} echo 'cat {} >> {}.d' | sed 's/ts.d/d.ts/' | source /dev/stdin"
   },
   "dependencies": {
     "@angular/common": "4.1.3",
