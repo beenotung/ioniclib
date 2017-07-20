@@ -55,8 +55,6 @@ export class HLineComponent {
   @Input()
   nocolor: boolean = false;
 
-  Mode = Mode;
-
   constructor(public platform: Platform) {
     console.log('Hello HLineComponent Component');
   }
@@ -79,25 +77,6 @@ export class HLineComponent {
           : <string>this.rawColor;
       case Mode.nocolor:
         return '';
-    }
-    if (this.mode === Mode.raw) {
-      return this.rawColor == true
-        ? this.color
-        : <string>this.rawColor;
-    } else {
-      /* mode === theme */
-      return this.color;
-    }
-  }
-
-  get _color_class(): string {
-    if (this.mode === Mode.theme) {
-      return this.platform.is('ios')
-        ? 'toolbar-ios-primary'
-        : 'toolbar-md-primary'
-        ;
-    } else {
-      throw new Error('unsupported mode');
     }
   }
 }
