@@ -1,6 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {ErrorHandler, NgModule} from '@angular/core';
-import {IonicErrorHandler} from 'ionic-angular';
+import {IonicErrorHandler, IonicModule} from 'ionic-angular';
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {StatusBar} from '@ionic-native/status-bar';
 
@@ -12,24 +12,25 @@ import {HorizonService} from './providers/horizon-service/horizon-service';
 
 @NgModule({
   declarations: [
-    HLineComponent,
-    LoadingComponent,
+    HLineComponent
+    , LoadingComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule
+    , IonicModule
   ],
   entryComponents: [],
   providers: [
-    StatusBar,
-    SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    ProgressService,
-    CustomBrowserXhr,
-    HorizonService,
+    StatusBar
+    , SplashScreen
+    , {provide: ErrorHandler, useClass: IonicErrorHandler}
+    , ProgressService
+    , CustomBrowserXhr
+    , HorizonService
   ],
   exports: [
-    HLineComponent,
-    LoadingComponent,
+    HLineComponent
+    , LoadingComponent
   ],
 })
 export class IonicLibModule {

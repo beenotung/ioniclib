@@ -16,17 +16,18 @@ import {HorizonService} from '../providers/horizon-service/horizon-service';
     // LoadingComponent,
   ],
   imports: [
-    BrowserModule,
-    IonicModule.forRoot(AppModule)
+    BrowserModule
+    , IonicModule
+    , IonicModule.forRoot(AppModule)
   ],
   entryComponents: [],
   providers: [
-    StatusBar,
-    SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    ProgressService,
-    CustomBrowserXhr,
-    HorizonService,
+    StatusBar
+    , SplashScreen
+    , {provide: ErrorHandler, useClass: IonicErrorHandler}
+    , ProgressService
+    , CustomBrowserXhr
+    , HorizonService
   ],
   exports: [
     // HLineComponent,

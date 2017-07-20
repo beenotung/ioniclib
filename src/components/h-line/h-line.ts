@@ -13,7 +13,30 @@ enum Mode {
  */
 @Component({
   selector: 'h-line',
-  templateUrl: 'h-line.html'
+  template: `
+    <div
+      *ngIf="mode===Mode.raw"
+      [style.background]="_color"
+      [style.height]="height"
+      [style.padding]="padding"
+      class="center-line"
+    ></div>
+
+    <!-- TODO fix ion-nav AOT compile issue -->
+    <ion-toolbar
+      *ngIf="mode===Mode.theme"
+      hideBackButton
+      showWhen="ios"
+      [color]="_color"
+      [style.padding]="padding"
+      [style.height]="height"
+    ></ion-toolbar>
+
+    <div
+      *ngIf="mode===Mode.nocolor"
+      [style.height]="height"
+    ></div>
+  `
 })
 export class HLineComponent {
 
@@ -47,15 +70,22 @@ export class HLineComponent {
   }
 
   get _color(): string {
+    switch (this.mode) {
+      case Mode.theme:
+        return this.color;
+      case Mode.raw:
+        return this.rawColor == true
+          ? this.color
+          : <string>this.rawColor;
+      case Mode.nocolor:
+        return '';
+    }
     if (this.mode === Mode.raw) {
       return this.rawColor == true
         ? this.color
         : <string>this.rawColor;
     } else {
       /* mode === theme */
-      if (this.mode === Mode.theme) {
-        console.warn('not impl');
-      }
       return this.color;
     }
   }

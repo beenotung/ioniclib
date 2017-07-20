@@ -10,7 +10,10 @@ import {assets} from '../../app/app.res';
  */
 @Component({
   selector: 'loading-cmp',
-  templateUrl: 'loading.html'
+  template: `
+    <img [src]="imgSrc" [width]="imgWidth" [height]="imgHeight" *ngIf="customSize()">
+    <img [src]="imgSrc" [width]="33.33" *ngIf="!customSize()">
+  `
 })
 export class LoadingComponent {
 
