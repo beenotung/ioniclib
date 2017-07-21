@@ -2,6 +2,8 @@ import {Component, Input} from '@angular/core';
 import {isDefined} from '@beenotung/tslib/src/lang';
 import {assets} from '../../app/app.res';
 
+let defaultImgSrc = assets.img.loading;
+
 /**
  * Generated class for the LoadingComponent component.
  *
@@ -23,7 +25,7 @@ export class LoadingComponent {
   imgHeight: number | string;
 
   @Input()
-  imgSrc = assets.img.loading;
+  imgSrc = defaultImgSrc;
 
   constructor() {
     console.log('Hello LoadingComponent Component');
@@ -31,5 +33,11 @@ export class LoadingComponent {
 
   customSize(): boolean {
     return isDefined(this.imgHeight) || isDefined(this.imgWidth);
+  }
+}
+
+export namespace LoadingComponent {
+  export function setDefaultImgSrc(src: string) {
+    defaultImgSrc = src;
   }
 }
