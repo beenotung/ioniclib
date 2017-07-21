@@ -41,6 +41,7 @@
   },
   "description": "An Ionic library",
   "peerDependencies": {
+    "@angular/core": "4.1.3",
     "typestub-horizon-client": "^0.1.3"
   },
   "repository": {
