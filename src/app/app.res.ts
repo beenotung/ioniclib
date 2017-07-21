@@ -5,6 +5,6 @@ export namespace assets {
   }
 
   export namespace img {
-    export const loading = 'assets/img/animal.gif';
+    export const loading = "assets/img/animal.gif";
   }
 }

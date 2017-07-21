@@ -1,7 +1,7 @@
-import {Injectable} from '@angular/core';
-import {BrowserXhr} from '@angular/http';
-import 'rxjs/add/operator/map';
-import {ProgressService} from '../progress-service/progress-service';
+import {Injectable} from "@angular/core";
+import {BrowserXhr} from "@angular/http";
+import "rxjs/add/operator/map";
+import {ProgressService} from "../progress-service/progress-service";
 
 /*
   Generated class for the CustomBrowserXhr provider.

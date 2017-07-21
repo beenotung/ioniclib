@@ -1,6 +1,6 @@
-import {Injectable} from '@angular/core';
-import 'rxjs/add/operator/map';
-import {Subject} from 'rxjs/Subject';
+import {Injectable} from "@angular/core";
+import "rxjs/add/operator/map";
+import {Subject} from "rxjs/Subject";
 
 /*
   Generated class for the ProgressService provider.

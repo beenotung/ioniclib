@@ -1,5 +1,5 @@
-import {Component, Input} from '@angular/core';
-import {Platform} from 'ionic-angular';
+import {Component, Input} from "@angular/core";
+import {Platform} from "ionic-angular";
 
 export enum HLineMode {
   theme, raw, nocolor
@@ -14,7 +14,7 @@ const Mode = HLineMode;
  * for more info on Angular Components.
  */
 @Component({
-  selector: 'h-line',
+  selector: "h-line",
   template: `
     <div
       *ngIf="mode===Mode.raw"
@@ -44,16 +44,16 @@ const Mode = HLineMode;
 export class HLineComponent {
 
   @Input()
-  height = '2px';
+  height = "2px";
 
   @Input()
-  color = 'black';
+  color = "black";
 
   @Input()
   rawColor: boolean | string = false;
 
   @Input()
-  padding = '0';
+  padding = "0";
 
   @Input()
   nocolor: boolean = false;
@@ -61,13 +61,13 @@ export class HLineComponent {
   Mode = HLineMode;
 
   constructor(public platform: Platform) {
-    console.log('Hello HLineComponent Component');
+    console.log("Hello HLineComponent Component");
   }
 
   get mode(): HLineMode {
     return this.nocolor !== false
       ? Mode.nocolor
-      : this.rawColor == true || typeof this.rawColor === 'string'
+      : this.rawColor == true || typeof this.rawColor === "string"
         ? Mode.raw
         : Mode.theme;
   }
@@ -81,7 +81,7 @@ export class HLineComponent {
           ? this.color
           : <string>this.rawColor;
       case Mode.nocolor:
-        return '';
+        return "";
     }
   }
 }

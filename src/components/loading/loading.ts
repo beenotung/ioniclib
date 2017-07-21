@@ -1,6 +1,6 @@
-import {Component, Input} from '@angular/core';
-import {isDefined} from '@beenotung/tslib/src/lang';
-import {assets} from '../../app/app.res';
+import {Component, Input} from "@angular/core";
+import {isDefined} from "@beenotung/tslib/src/lang";
+import {assets} from "../../app/app.res";
 
 let defaultImgSrc = assets.img.loading;
 
@@ -11,7 +11,7 @@ let defaultImgSrc = assets.img.loading;
  * for more info on Angular Components.
  */
 @Component({
-  selector: 'loading-cmp',
+  selector: "loading-cmp",
   template: `
     <img [src]="imgSrc" [width]="imgWidth" [height]="imgHeight" *ngIf="customSize()">
     <img [src]="imgSrc" [width]="33.33" *ngIf="!customSize()">
@@ -28,7 +28,7 @@ export class LoadingComponent {
   imgSrc = defaultImgSrc;
 
   constructor() {
-    console.log('Hello LoadingComponent Component');
+    console.log("Hello LoadingComponent Component");
   }
 
   customSize(): boolean {
