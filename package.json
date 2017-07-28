@@ -46,6 +46,6 @@
     "zone.js": "^0.8.12"
   },
   "dependencies": {
-    "@beenotung/tslib": "^3.4.1"
+    "@beenotung/tslib": "^4.0.2"
   }
 }
