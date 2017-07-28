@@ -14,7 +14,7 @@ git submodule add https://github.com/beenotung/angularlib.git
 
 ### Install from npm
 ```bash
-npm install @beenotung/angularlib
+npm install angularlib
 ```
 
 ## Usage
