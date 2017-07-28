@@ -1,2 +1,2 @@
 #!/bin/bash
-npx ionic $@
+./node_modules/.bin/ionic $@
