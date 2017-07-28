@@ -1,0 +1,51 @@
+{
+  "name": "angularlib",
+  "version": "0.1.0",
+  "description": "Angular Common Library",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "npm-run-all build lint",
+    "lint": "ionic-app-scripts lint",
+    "test": "tslint --type-check --project tsconfig.json -c tslint.json src/angularlib.all.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beenotung/angularlib.git"
+  },
+  "keywords": [
+    "Angular",
+    "Library",
+    "Typescript",
+    "Typing",
+    "TypeStub",
+    "Common"
+  ],
+  "author": "Beeno Tung",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/beenotung/angularlib/issues"
+  },
+  "homepage": "https://github.com/beenotung/angularlib#readme",
+  "devDependencies": {
+    "@angular/common": "^4.3.2",
+    "@angular/compiler": "^4.1.3",
+    "@angular/compiler-cli": "^4.1.3",
+    "@angular/core": "^4.1.3",
+    "@angular/forms": "^4.1.3",
+    "@angular/platform-browser": "^4.3.2",
+    "@ionic/app-scripts": "^2.1.3",
+    "ajv": "^5.2.2",
+    "codelyzer": "^3.1.2",
+    "ionic-angular": "^3.5.3",
+    "npm-run-all": "^4.0.2",
+    "rxjs": "^5.4.0",
+    "tslint": "^5.5.0",
+    "typescript": "^2.4.2",
+    "typestub-horizon-client": "^0.1.3",
+    "zone.js": "^0.8.12"
+  },
+  "dependencies": {
+    "@beenotung/tslib": "^3.4.1"
+  }
+}
