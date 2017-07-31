@@ -6,14 +6,19 @@ import {StatusBar} from "@ionic-native/status-bar";
 
 import {ProgressService} from "../providers/progress-service/progress-service";
 import {CustomBrowserXhr} from "../providers/custom-browser-xhr/custom-browser-xhr";
-// import {HLineComponent} from '../components/h-line/h-line';
-// import {LoadingComponent} from '../components/loading/loading';
 import {HorizonService} from "../providers/horizon-service/horizon-service";
+
+// import {HLineComponent} from "../components/h-line/h-line";
+// import {LoadingComponent} from "../components/loading/loading";
+// import {MenuPageHeaderComponent} from "../components/menu-page-header/menu-page-header";
+// import {ModalHeaderComponent} from "../components/modal-header/modal-header";
 
 @NgModule({
   declarations: [
     // HLineComponent,
     // LoadingComponent,
+    // MenuPageHeaderComponent,
+    // ModalHeaderComponent,
   ],
   imports: [
     BrowserModule
@@ -32,6 +37,8 @@ import {HorizonService} from "../providers/horizon-service/horizon-service";
   exports: [
     // HLineComponent,
     // LoadingComponent,
+    // MenuPageHeaderComponent,
+    // ModalHeaderComponent,
   ],
 })
 export class AppModule {
