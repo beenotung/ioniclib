@@ -9,8 +9,8 @@
     "lint": "ionic-app-scripts lint",
     "ionic:build": "ionic-app-scripts build",
     "ionic:serve": "ionic-app-scripts serve",
-    "test": "npm run build --aot",
-    "prepublish": "tsc && npm run build --aot"
+    "test": "npm run prepublish",
+    "prepublish": "tsc && npm run build --aot && npm run lint"
   },
   "dependencies": {
     "@angular/common": "4.1.3",
