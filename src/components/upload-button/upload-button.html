@@ -10,5 +10,8 @@
     <span *ngIf="text">{{text}}</span>
   </ion-icon>
 </button>
-<input type="file" (change)="addFile($event)" hidden *ngIf="multiple" multiple #input>
-<input type="file" (change)="addFile($event)" hidden *ngIf="!multiple" #input>
+<input
+  type="file" (change)="addFile()"
+  [attr.multiple]="_multiple?'':null"
+  [attr.accept]="_accept?_accept:null"
+  hidden #input/>

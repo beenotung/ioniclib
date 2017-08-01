@@ -16,13 +16,16 @@ export class UploadButtonComponent {
   text: string;
 
   @Input()
-  multiple: boolean;
+  _multiple?: boolean;
 
-  @Output()
-  addFiles = new EventEmitter<FileList>();
+  @Input()
+  _accept?: string;
 
   @Input()
   _color: string = "primary";
+
+  @Output()
+  addFiles = new EventEmitter<FileList>();
 
   @ViewChild("input")
   navtiveBtnRef: ElementRef;
@@ -46,7 +49,7 @@ export class UploadButtonComponent {
   }
 
   addFile() {
-    let files: FileList = this.navtiveBtnRef.nativeElement.files;
+    const files: FileList = this.navtiveBtnRef.nativeElement.files;
     this.addFiles.emit(files);
   }
 }
