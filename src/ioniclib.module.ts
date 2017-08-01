@@ -11,6 +11,7 @@ import {LoadingComponent} from "./components/loading/loading";
 import {HorizonService} from "./providers/horizon-service/horizon-service";
 import {MenuPageHeaderComponent} from "./components/menu-page-header/menu-page-header";
 import {ModalHeaderComponent} from "./components/modal-header/modal-header";
+import {FormatByte} from "./pipes/format-byte/format-byte";
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import {ModalHeaderComponent} from "./components/modal-header/modal-header";
     , LoadingComponent
     , MenuPageHeaderComponent
     , ModalHeaderComponent
+    , FormatByte
   ],
   imports: [
     BrowserModule
@@ -37,6 +39,7 @@ import {ModalHeaderComponent} from "./components/modal-header/modal-header";
     , LoadingComponent
     , MenuPageHeaderComponent
     , ModalHeaderComponent
+    , FormatByte
   ],
 })
 export class IonicLibModule {
