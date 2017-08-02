@@ -7,4 +7,5 @@ else
 fi
 npm test
 npm version "$t"
+git push --follow-tags
 npm publish
