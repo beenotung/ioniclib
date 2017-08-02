@@ -8,7 +8,18 @@ import {Component, ElementRef, EventEmitter, Input, Output, ViewChild} from "@an
  */
 @Component({
   selector: "upload-button",
-  templateUrl: "upload-button.html"
+  template: `
+    <button ion-button (click)="selectFile()" [color]="_color">
+      <ion-icon name="arrow-round-up">
+        <span *ngIf="text">{{text}}</span>
+      </ion-icon>
+    </button>
+    <input
+      type="file" (change)="addFile()"
+      [attr.multiple]="_multiple?'':null"
+      [attr.accept]="_accept?_accept:null"
+      hidden #input/>
+  `
 })
 export class UploadButtonComponent {
 
