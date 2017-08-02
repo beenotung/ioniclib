@@ -10,7 +10,7 @@ import {Component, ElementRef, EventEmitter, Input, Output, ViewChild} from "@an
   selector: "upload-button",
   template: `
     <button ion-button (click)="selectFile()" [color]="_color">
-      <ion-icon name="arrow-round-up">
+      <ion-icon [name]="icon">
         <span *ngIf="text">{{text}}</span>
       </ion-icon>
     </button>
@@ -31,6 +31,9 @@ export class UploadButtonComponent {
 
   @Input()
   _accept?: string;
+
+  @Input()
+  icon: string = "cloud-upload";
 
   @Input()
   _color: string = "primary";
