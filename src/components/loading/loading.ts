@@ -1,6 +1,6 @@
 import {Component, Input} from "@angular/core";
 import {isDefined} from "@beenotung/tslib/src/lang";
-import {assets} from "../../app/app.res";
+import {assets} from "../../ioniclib.res";
 
 let defaultImgSrc = assets.img.loading;
 

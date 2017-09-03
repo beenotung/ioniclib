@@ -1,19 +1,20 @@
 {
   "name": "ioniclib",
-  "version": "2.1.1",
+  "version": "2.2.3",
   "author": "Beeno Tung",
   "homepage": "https://github.com/beenotung",
   "scripts": {
     "postinstall": "npm run build",
     "clean": "ionic-app-scripts clean",
     "build": "npm-run-all build:*",
-    "build:quick": "ionic-app-scripts build",
+    "build:tsc": "tsc",
+    "build:ionic": "ionic-app-scripts build --enableLint false",
     "build:aot": "ionic-app-scripts build --aot",
     "lint": "npm-run-all lint:*",
     "lint:tsc": "tslint --type-check --project tsconfig.json -c tslint.json src/tslib.all.ts",
     "lint:ionic": "ionic-app-scripts lint",
     "test": "npm-run-all build lint",
-    "prepublishOnly": "npm test"
+    "prepublishOnly": "npm build"
   },
   "dependencies": {
     "@angular/common": "^4.1.3",
