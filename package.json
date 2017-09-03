@@ -1,6 +1,6 @@
 {
   "name": "angularlib",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Angular Common Library",
   "main": "index.js",
   "scripts": {
