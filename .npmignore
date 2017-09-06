@@ -1,0 +1,52 @@
+## IDE
+.idea/
+
+## Source code control
+.git
+
+## Test
+config.xml
+
+## Dev scripts
+auto-init
+auto-update
+build
+build-apk
+build-web
+bump
+bump-android
+clean
+cordova
+dev
+gc
+gs
+gu
+init
+install
+install-dev
+ionic
+lint
+publish
+resource
+test
+update
+upload
+version
+
+## Config
+ionic.config.json
+
+## Typescript
+src
+tsconfig.json
+tslint.json
+
+## Ionic
+.sass-cache/
+.tmp/
+.versions/
+coverage/
+hooks/
+platforms/
+plugins/
+www/
