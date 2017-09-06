@@ -30,14 +30,15 @@ export function mkChartColor(r: number, g: number, b: number, a: number = 0): Ng
   };
 }
 
-export class LineChartData {
+export interface LineChartData {
   data: number[];
   label: string;
 }
 
+// TODO change into interface
 export class NgChartParams {
   lineChartData: LineChartData[];
-  lineChartLabels: String[];
+  lineChartLabels: string[];
   lineChartOptions?: {
     responsive?: boolean
   };
@@ -46,7 +47,7 @@ export class NgChartParams {
   lineChartType: LineChartType;
 
   /* set default config */
-  constructor(data: LineChartData[], labels: String[], type: LineChartType) {
+  constructor(data: LineChartData[], labels: string[], type: LineChartType) {
     this.lineChartData = data;
     this.lineChartLabels = labels;
     this.lineChartOptions = {responsive: true};

@@ -7,6 +7,8 @@
     "node_modules/tslint-eslint-rules/dist/rules"
   ],
   "rules": {
+    "arrow-parens": false,
+    "jsdoc-format": false,
     "space-before-function-paren": false,
     "callable-types": true,
     "class-name": true,
