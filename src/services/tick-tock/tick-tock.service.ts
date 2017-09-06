@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs/Rx';
+import {Injectable} from "@angular/core";
+import {Observable} from "rxjs/Rx";
 
 /**
  * TickTockService class.
@@ -8,13 +8,19 @@ import { Observable } from 'rxjs/Rx';
 export class TickTockService {
 
   /**
+   * Set up timer frequency.
+   * @type {number}
+   */
+  private readonly TIMEOUT: number = 1000;
+
+  /**
    * Extend time value with zero if required.
    * @param value
    * @returns {string}
    */
   private static formatTimeNumber(value: number): string {
     const stringValue = value.toString();
-    return ('0' + stringValue).slice(-2);
+    return ("0" + stringValue).slice(-2);
   }
 
   /**
@@ -30,12 +36,6 @@ export class TickTockService {
 
     return `${hours}:${minutes}:${seconds}`;
   }
-
-  /**
-   * Set up timer frequency.
-   * @type {number}
-   */
-  private readonly TIMEOUT: number = 1000;
 
   /**
    * Get current time observable.

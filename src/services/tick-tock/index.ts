@@ -1,1 +1,1 @@
-export * from './tick-tock.service';
+export * from "./tick-tock.service";

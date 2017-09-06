@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from "@angular/core";
 
-import { TickTockService } from '../../services';
+import {TickTockService} from "../../services";
 
 @Component({
-  selector: 'tick-tock',
-  styleUrls: ['./tick-tock.component.scss'],
-  templateUrl: './tick-tock.component.html',
+  selector: "tick-tock",
+  styleUrls: ["./tick-tock.component.scss"],
+  templateUrl: "./tick-tock.component.html",
 })
 export class TickTockComponent implements OnInit {
   // Current time string.
@@ -15,9 +15,8 @@ export class TickTockComponent implements OnInit {
    * Component constructor with injected dependencies.
    * @param tickTockService
    */
-  public constructor(
-    private tickTockService: TickTockService
-  ) {}
+  public constructor(private tickTockService: TickTockService) {
+  }
 
   /**
    * Implements onInit event handler.
