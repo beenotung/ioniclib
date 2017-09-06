@@ -5,7 +5,7 @@
 .git
 
 ## Test
-config.xml
+app/
 
 ## Dev scripts
 auto-init
@@ -50,3 +50,4 @@ hooks/
 platforms/
 plugins/
 www/
+config.xml
