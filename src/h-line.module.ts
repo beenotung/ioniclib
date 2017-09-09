@@ -1,9 +1,9 @@
 import {NgModule} from "@angular/core";
 import {HLineComponent} from "./components";
-import {IonicApp} from "ionic-angular";
+import {IonicModule} from "ionic-angular";
 
 @NgModule({
-  imports: [IonicApp],
+  imports: [IonicModule],
   providers: [
     // Service
   ],
