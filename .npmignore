@@ -1,11 +1,5 @@
-## IDE
-.idea/
-
 ## Source code control
 .git
-
-## Test
-app/
 
 ## Dev scripts
 auto-init
@@ -45,9 +39,37 @@ tslint.json
 .sass-cache/
 .tmp/
 .versions/
-coverage/
 hooks/
 platforms/
 plugins/
 www/
 config.xml
+
+# Node
+node_modules
+npm-debug.log
+
+# Yarn
+yarn-error.log
+
+# JetBrains
+.idea/
+
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Mac
+.DS_Store
+
+# Temporary files
+coverage/
+demo/
+docs
+tmp
+
+# Library files
+src/

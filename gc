@@ -1,3 +1,0 @@
-#!/bin/bash
-## generate component
-./ionic g component $@

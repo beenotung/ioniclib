@@ -1,3 +1,2 @@
 #!/bin/bash
-## check npm packages update
 npx npm-check -u

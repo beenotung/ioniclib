@@ -1,5 +1,5 @@
 import {Platform} from "ionic-angular";
-import {enum_only_string} from "@beenotung/tslib/src/enum";
+import {enum_only_string} from "@beenotung/tslib/enum";
 
 export enum AppType {
   web, android, ios, windows,

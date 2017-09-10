@@ -9,9 +9,39 @@
 log.txt
 *.sublime-project
 *.sublime-workspace
-.vscode/
 npm-debug.log*
 
+
+$RECYCLE.BIN/
+
+UserInterfaceState.xcuserstate
+
+*.orig
+res/
+.sourcemaps/
+
+# Node
+node_modules
+npm-debug.log
+
+# Yarn
+yarn-error.log
+
+# JetBrains
+.idea/
+
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Mac
+.DS_Store
+
+# Temporary files
+docs/
 .sass-cache/
 .tmp/
 .versions/
@@ -26,12 +56,3 @@ plugins/
 plugins/android.json
 plugins/ios.json
 www/
-$RECYCLE.BIN/
-
-.DS_Store
-Thumbs.db
-UserInterfaceState.xcuserstate
-
-*.orig
-res/
-.sourcemaps/
