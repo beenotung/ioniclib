@@ -73,3 +73,6 @@ tmp
 
 # Library files
 src/
+
+# Build files
+dist.list
