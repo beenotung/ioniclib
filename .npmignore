@@ -12,6 +12,8 @@ bump-android
 clean
 cordova
 dev
+dist:move
+dist:unmove
 gc
 gs
 gu
