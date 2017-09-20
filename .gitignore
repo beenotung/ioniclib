@@ -28,7 +28,6 @@ npm-debug.log
 yarn-error.log
 
 # JetBrains
-.idea/
 
 # VS Code
 .vscode/
