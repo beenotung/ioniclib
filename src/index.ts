@@ -3,7 +3,8 @@ export {TickTockComponent} from "./components";
 export {TickTockModule} from "./tick-tock.module";
 
 export {HLineComponent} from "./components";
-export {HLineModule} from "./h-line.module";
+export {VLineComponent} from "./components";
+export {LineModule} from "./line.module";
 
 export {MenuPageHeaderComponent} from "./components";
 export {MenuPageHeaderModule} from "./menu-page-header.module";

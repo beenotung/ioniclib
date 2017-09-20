@@ -1,6 +1,7 @@
 import {NgModule} from "@angular/core";
-import {HLineComponent} from "./components";
 import {IonicModule} from "ionic-angular";
+import {HLineComponent} from "./components";
+import {VLineComponent} from "./components/v-line/v-line.component";
 
 @NgModule({
   imports: [IonicModule],
@@ -9,10 +10,12 @@ import {IonicModule} from "ionic-angular";
   ],
   declarations: [
     HLineComponent,
+    VLineComponent,
   ],
   exports: [
     HLineComponent,
+    VLineComponent,
   ]
 })
-export class HLineModule {
+export class LineModule {
 }

@@ -1,11 +1,11 @@
 import {async, ComponentFixture, TestBed} from "@angular/core/testing";
 
 import {LineModule} from "../../";
-import {HLineComponent} from "./h-line.component";
+import {VLineComponent} from "./v-line.component";
 
-describe("HLineComponent", () => {
-  let componentFixture: ComponentFixture<HLineComponent>;
-  let componentInstance: HLineComponent;
+describe("VLineComponent", () => {
+  let componentFixture: ComponentFixture<VLineComponent>;
+  let componentInstance: VLineComponent;
 
   // Asynchronous beforeEach.
   beforeEach(
@@ -19,7 +19,7 @@ describe("HLineComponent", () => {
 
   // Synchronous BeforeEach.
   beforeEach(() => {
-    componentFixture = TestBed.createComponent(HLineComponent);
+    componentFixture = TestBed.createComponent(VLineComponent);
     componentInstance = componentFixture.componentInstance;
   });
 

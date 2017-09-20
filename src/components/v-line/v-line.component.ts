@@ -4,14 +4,14 @@ import {LineMode} from "../line/line-mode";
 const Mode = LineMode;
 
 @Component({
-  selector: "h-line",
-  styleUrls: ["./h-line.component.scss"],
-  templateUrl: "./h-line.component.html",
+  selector: "v-line",
+  styleUrls: ["./v-line.component.scss"],
+  templateUrl: "./v-line.component.html",
 })
-export class HLineComponent {
+export class VLineComponent {
 
   @Input()
-  height = "2px";
+  width = "2px";
 
   @Input()
   color = "black";
