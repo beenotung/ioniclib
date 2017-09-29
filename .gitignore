@@ -58,3 +58,5 @@ www/
 
 # Build files
 dist.list
+
+yarn.lock
