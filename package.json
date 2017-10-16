@@ -1,6 +1,6 @@
 {
   "name": "ioniclib",
-  "version": "4.0.2",
+  "version": "4.0.3",
   "description": "Ionic Common Library",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.js",
