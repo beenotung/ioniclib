@@ -35,6 +35,8 @@ ionic.config.json
 ## Typescript
 src
 tsconfig.json
+tsconfig-ng.json
+tsconfig-ionic.json
 tslint.json
 
 ## Ionic

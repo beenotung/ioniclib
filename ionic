@@ -1,0 +1,3 @@
+#!/bin/bash
+hash ionic 2>/dev/null || ./install-dev
+ionic $@

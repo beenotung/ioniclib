@@ -9,12 +9,6 @@
 log.txt
 *.sublime-project
 *.sublime-workspace
-npm-debug.log*
-
-
-$RECYCLE.BIN/
-
-UserInterfaceState.xcuserstate
 
 *.orig
 res/
@@ -22,10 +16,11 @@ res/
 
 # Node
 node_modules
-npm-debug.log
+npm-debug.log*
 
 # Yarn
 yarn-error.log
+yarn.lock
 
 # JetBrains
 
@@ -38,6 +33,8 @@ Desktop.ini
 
 # Mac
 .DS_Store
+$RECYCLE.BIN/
+UserInterfaceState.xcuserstate
 
 # Temporary files
 docs/
@@ -58,5 +55,3 @@ www/
 
 # Build files
 dist.list
-
-yarn.lock

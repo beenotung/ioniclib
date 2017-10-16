@@ -1,2 +1,2 @@
 #!/bin/bash
-./npm_ run build
+./npm_ run build $@
