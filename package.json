@@ -33,14 +33,12 @@
     "tslint:aot": "for debug only. not recommented, since the output maybe very compact"
   },
   "scripts": {
-    "build": "run-p build:ng build:ionic",
-    "build:ng": "npm run build:esm && npm run build:umd",
+    "build": "npm run build:esm && npm run build:umd",
     "build:esm": "gulp inline-templates && npm run ngcompile",
     "build:esm:watch": "gulp build:esm:watch",
     "build:umd": "webpack --config webpack-umd.config.ts",
     "build:umd:watch": "npm run build:umd -- --watch",
     "build:watch": "run-p build:umd:watch build:esm:watch",
-    "build:ionic": "npm run ionic:build",
     "ci": "npm run lint && npm run test && npm run build && npm run docs",
     "clean": "npm run clean:tmp && rimraf node_modules && npm run ionic:clean",
     "clean:tmp": "npm run dist:unmove && rimraf coverage dist tmp docs www",
