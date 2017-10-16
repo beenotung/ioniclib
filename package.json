@@ -66,13 +66,9 @@
     "test:ng": "karma start",
     "test:watch": "karma start --auto-watch --no-single-run",
     "test:ionic": "npm run ionic:test",
-    "serve": "npm run ionic:serve",
     "ionic:clean": "ionic-app-scripts clean --tsconfig tsconfig-ionic.json",
-    "ionic:build": "ionic-app-scripts build --tsconfig tsconfig-ionic.json",
-    "ionic:build-aot": "ionic-app-scripts build --aot",
     "ionic:lint": "ionic-app-scripts lint --tsconfig tsconfig-ionic.json",
-    "ionic:serve": "ionic-app-scripts serve --tsconfig tsconfig-ionic.json",
-    "ionic:test": "run-s ionic:build ionic:build-aot ionic:lint"
+    "ionic:test": "npm run ionic:lint"
   },
   "dependencies": {
     "@angular/common": "4.4.3",
