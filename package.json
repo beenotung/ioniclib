@@ -79,13 +79,14 @@
     "@angular/platform-browser-dynamic": "4.4.3",
     "@beenotung/tslib": "^7.0.3",
     "ionic-angular": "3.7.1",
-    "rxjs": "^5.4.3",
+    "rxjs": "5.4.3",
     "zone.js": "0.8.18"
   },
   "peerDependencies": {
     "@angular/common": "^4.0.0",
     "@angular/core": "^4.0.0",
-    "rxjs": "^5.4.0",
+    "ionic-angular": "3.7.1",
+    "rxjs": "^5.4.3",
     "typestub-horizon-client": "^0.1.7"
   },
   "devDependencies": {
