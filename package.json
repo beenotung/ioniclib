@@ -23,12 +23,12 @@
   "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/beenotung/angularlib.git"
+    "url": "git+https://github.com/beenotung/ioniclib.git"
   },
   "bugs": {
-    "url": "https://github.com/beenotung/angularlib/issues"
+    "url": "https://github.com/beenotung/ioniclib/issues"
   },
-  "homepage": "https://github.com/beenotung/angularlib#readme",
+  "homepage": "https://github.com/beenotung/ioniclib#readme",
   "scripts-info": {
     "tslint:aot": "for debug only. not recommented, since the output maybe very compact"
   },
@@ -138,5 +138,9 @@
     "webpack": "^3.1.0",
     "webpack-angular-externals": "^1.0.2",
     "webpack-rxjs-externals": "^1.0.0"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test"
   }
 }
