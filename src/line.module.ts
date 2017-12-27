@@ -1,6 +1,6 @@
 import {NgModule} from "@angular/core";
 import {IonicModule} from "ionic-angular";
-import {HLineComponent} from "./components";
+import {HLineComponent} from "./components/h-line/h-line.component";
 import {VLineComponent} from "./components/v-line/v-line.component";
 
 @NgModule({

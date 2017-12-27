@@ -1,6 +1,6 @@
 import {async, ComponentFixture, TestBed} from "@angular/core/testing";
 
-import {LineModule} from "../../";
+import {LineModule} from "../../line.module";
 import {HLineComponent} from "./h-line.component";
 
 describe("HLineComponent", () => {
