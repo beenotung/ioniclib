@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-npm install --dev
+npm install
 if [ -d src/index ]; then
   mv src/index .
 fi
