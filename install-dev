@@ -1,7 +1,6 @@
 #!/bin/bash
 
-hash yarn 2>/dev/null || npm i -g yarn
-yarn global add \
+npm i -g \
   ionic cordova \
   npm-run \
   npm-check
