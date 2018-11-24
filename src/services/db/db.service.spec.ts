@@ -1,10 +1,10 @@
 import {DbService} from "./db.service";
 
 describe("DbService", () => {
-  let tickTockService: DbService;
+  let dbService: DbService;
 
   beforeEach(() => {
-    tickTockService = new DbService();
+    dbService = new DbService();
   });
 
 });
