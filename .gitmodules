@@ -1,0 +1,3 @@
+[submodule "lib/car-insur-model"]
+	path = lib/car-insur-model
+	url = https://gitlab.com/redbudhk/car-insur-model
