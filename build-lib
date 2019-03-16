@@ -7,6 +7,6 @@ fi
 ./gen-index
 npm run build
 ./rm-index
-mv index src/ || echo ''
+mv index src/ 2>/dev/null || true
 node ./mk-package.js > dist/package.json
 echo "done."
