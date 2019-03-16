@@ -4,5 +4,6 @@ emacs.xml
 encodings.xml
 inspectionProfiles
 misc.xml
+thriftCompiler.xml
 vcs.xml
 workspace.xml
