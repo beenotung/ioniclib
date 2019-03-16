@@ -1,4 +1,4 @@
-import {ToastController, ToastOptions} from "ionic-angular";
+import { ToastController, ToastOptions } from 'ionic-angular';
 
 export let defaultToastOption: ToastOptions = {
   dismissOnPageChange: true,

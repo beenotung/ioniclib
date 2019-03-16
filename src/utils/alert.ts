@@ -1,7 +1,7 @@
-import {AlertController, AlertOptions} from "ionic-angular";
+import { AlertController, AlertOptions } from 'ionic-angular';
 
 export let defaultAlertOptions: AlertOptions = {
-  buttons: ['Ok']
+  buttons: ['Ok'],
 };
 
 export function showAlert(alertCtrl: AlertController, options: AlertOptions) {

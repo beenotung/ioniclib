@@ -1,4 +1,4 @@
-import {TextInput} from "ionic-angular";
+import { TextInput } from 'ionic-angular';
 
 export function setFocus(e: TextInput) {
   setTimeout(() => {

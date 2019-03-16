@@ -1,11 +1,11 @@
-import {async, ComponentFixture, TestBed} from "@angular/core/testing";
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import {MenuPageHeaderComponent} from "./menu-page-header.component";
-import {MenuPageHeaderModule} from "../../menu-page-header.module";
-import {mockApp, mockConfig} from "ionic-angular/util/mock-providers";
-import {App, Config} from "ionic-angular";
+import { MenuPageHeaderComponent } from './menu-page-header.component';
+import { MenuPageHeaderModule } from '../../menu-page-header.module';
+import { mockApp, mockConfig } from 'ionic-angular/util/mock-providers';
+import { App, Config } from 'ionic-angular';
 
-describe("MenuPageHeaderComponent", () => {
+describe('MenuPageHeaderComponent', () => {
   let component: MenuPageHeaderComponent;
   let fixture: ComponentFixture<MenuPageHeaderComponent>;
 
@@ -13,8 +13,8 @@ describe("MenuPageHeaderComponent", () => {
     TestBed.configureTestingModule({
       imports: [MenuPageHeaderModule],
       providers: [
-        {provide: App, useValue: mockApp()},
-        {provide: Config, useValue: mockConfig()},
+        { provide: App, useValue: mockApp() },
+        { provide: Config, useValue: mockConfig() },
         // MenuController,
       ],
     }).compileComponents();
@@ -26,7 +26,7 @@ describe("MenuPageHeaderComponent", () => {
     fixture.detectChanges();
   });
 
-  it("should be created", () => {
+  it('should be created', () => {
     expect(component).toBeTruthy();
   });
 });

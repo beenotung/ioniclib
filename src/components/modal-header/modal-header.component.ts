@@ -1,13 +1,12 @@
-import {Component, EventEmitter, Input, Output} from "@angular/core";
-import {ViewController} from "ionic-angular";
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { ViewController } from 'ionic-angular';
 
 @Component({
-  selector: "modal-header",
-  templateUrl: "./modal-header.component.html",
-  styleUrls: ["./modal-header.component.scss"]
+  selector: 'modal-header',
+  templateUrl: './modal-header.component.html',
+  styleUrls: ['./modal-header.component.scss'],
 })
 export class ModalHeaderComponent {
-
   @Input()
   title: string;
 
@@ -17,9 +16,7 @@ export class ModalHeaderComponent {
   @Output()
   dismiss = new EventEmitter();
 
-  constructor(public viewCtrl: ViewController) {
-
-  }
+  constructor(public viewCtrl: ViewController) {}
 
   onDismiss(event: Event) {
     this.dismiss.emit(event);

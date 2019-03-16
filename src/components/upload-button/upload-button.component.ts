@@ -1,12 +1,18 @@
-import {Component, ElementRef, EventEmitter, Input, Output, ViewChild} from "@angular/core";
+import {
+  Component,
+  ElementRef,
+  EventEmitter,
+  Input,
+  Output,
+  ViewChild,
+} from '@angular/core';
 
 @Component({
-  selector: "upload-button",
-  templateUrl: "./upload-button.component.html",
-  styleUrls: ["./upload-button.component.scss"]
+  selector: 'upload-button',
+  templateUrl: './upload-button.component.html',
+  styleUrls: ['./upload-button.component.scss'],
 })
 export class UploadButtonComponent {
-
   @Input()
   text: string;
 
@@ -17,15 +23,15 @@ export class UploadButtonComponent {
   _accept?: string;
 
   @Input()
-  icon: string = "cloud-upload";
+  icon: string = 'cloud-upload';
 
   @Input()
-  _color: string = "primary";
+  _color: string = 'primary';
 
   @Output()
   addFiles = new EventEmitter<FileList>();
 
-  @ViewChild("input")
+  @ViewChild('input')
   navtiveBtnRef: ElementRef;
 
   /*
