@@ -1,2 +1,3 @@
 #!/bin/bash
+set -e
 CHROME=chrome CHROME_BIN=chrome npm $@
